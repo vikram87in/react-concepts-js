@@ -10,6 +10,14 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': 'warn',
+    'indent': ['error', 2, { 'SwitchCase': 1 }],
+    'linebreak-style': ['error', 'windows'],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
+    'no-console': 'warn',
+    'no-unused-vars': 'warn',
+    'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   },
-}
+};
