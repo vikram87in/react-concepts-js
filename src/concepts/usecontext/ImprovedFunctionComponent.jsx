@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import ThemeProvider, { ThemeContext } from './ThemeProvider';
 
 export default function ImprovedFunctionComponent() {
+  console.log('ImprovedFunctionComponent render');
   return (
     <>
       <ThemeProvider>
@@ -22,6 +23,7 @@ export default function ImprovedFunctionComponent() {
 }
 
 function ChildComponent() {
+  console.log('ChildComponent render');
   return (
     <div>
       ChildComponent
@@ -32,6 +34,7 @@ function ChildComponent() {
 }
 
 function GrandChildComponent() {
+  console.log('GrandChildComponent render');
   const { theme, setTheme } = useContext(ThemeContext);
 
   const onClick = () => {

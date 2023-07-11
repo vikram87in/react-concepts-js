@@ -17,11 +17,12 @@ import './index.css';
 // import StaleValues from './concepts/use-effect-scenarios/StaleValues';
 // import StaleValuesFix from './concepts/use-effect-scenarios/StaleValuesFix';
 // import MainFunctionComponent from './concepts/usecontext/MainFunctionComponent';
-import ImprovedFunctionComponent from './concepts/usecontext/ImprovedFunctionComponent';
+// import ImprovedFunctionComponent from './concepts/usecontext/ImprovedFunctionComponent';
+import ImprovedClassChild from './concepts/usecontext/ImprovedClassChild';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-    <ImprovedFunctionComponent />
+    <ImprovedClassChild />
   </React.StrictMode>,
 );

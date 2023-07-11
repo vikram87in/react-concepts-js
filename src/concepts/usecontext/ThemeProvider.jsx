@@ -1,3 +1,4 @@
+import { Component } from 'react';
 import { createContext, useState } from 'react';
 
 // named export
@@ -13,6 +14,25 @@ function ThemeProvider({ children }) {
     </ThemeContext.Provider>
   );
 }
+
+
+// class ThemeProvider extends Component {
+//   state = { theme: 'light' };
+
+//   setTheme = (theme) => {
+//     this.setState({ theme });
+//   };
+
+//   render() {
+//     const propsObj = { theme: this.state.theme, setTheme: this.setTheme };
+//     return (
+//       <ThemeContext.Provider value={propsObj}>
+//         {this.props.children}
+//       </ThemeContext.Provider>
+//     );
+//   }
+// }
+
 
 // default export
 export default ThemeProvider;
