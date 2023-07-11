@@ -15,11 +15,13 @@ import './index.css';
 // import ReactMemoComponent from './concepts/rendering-optimizations/ReactMemoComponent';
 // import BreakingReactMemo from './concepts/rendering-optimizations/BreakingReactMemo';
 // import StaleValues from './concepts/use-effect-scenarios/StaleValues';
-import StaleValuesFix from './concepts/use-effect-scenarios/StaleValuesFix';
+// import StaleValuesFix from './concepts/use-effect-scenarios/StaleValuesFix';
+// import MainFunctionComponent from './concepts/usecontext/MainFunctionComponent';
+import ImprovedFunctionComponent from './concepts/usecontext/ImprovedFunctionComponent';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-    <StaleValuesFix />
+    <ImprovedFunctionComponent />
   </React.StrictMode>,
 );
