@@ -18,11 +18,18 @@ import './index.css';
 // import StaleValuesFix from './concepts/use-effect-scenarios/StaleValuesFix';
 // import MainFunctionComponent from './concepts/usecontext/MainFunctionComponent';
 // import ImprovedFunctionComponent from './concepts/usecontext/ImprovedFunctionComponent';
-import ImprovedClassChild from './concepts/usecontext/ImprovedClassChild';
+// import ContextInClassChild from './concepts/usecontext/ContextInClassChild';
+// import PreventRerender from './concepts/usecontext/PreventRerender';
+// import ComponentUsingEB from './concepts/error-boundaries/ComponentUsingEB';
+// import FunctionalComponent from './concepts/error-boundaries/FunctionalComponent';
+// import ReactErrorBoundary from './concepts/error-boundaries/ReactErrorBoundary';
+// import ReactErrorBoundary from './concepts/error-boundaries/ReactErrorBoundaryAdvanced';
+import PossibleReturns from './concepts/various-types-in-jsx/PossibleReturns'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-    <ImprovedClassChild />
+    <PossibleReturns />
   </React.StrictMode>,
 );
