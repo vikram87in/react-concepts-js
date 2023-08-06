@@ -26,7 +26,13 @@ class ThemeProvider extends Component {
   render() {
 
     // The code below will re-render all consumers every time the Provider re-renders because a new object is always created for value.
-    // To get around this, lift the value into the parent’s state:
+    // To get around this, lift the value into the parent’s state like this: 
+    // this.state = {
+    //   propsObj: {.... },
+    // };
+    // ... 
+    // <ThemeContext.Provider value={this.state.propsObj}>
+
     const propsObj = { theme: this.state.theme, setTheme: this.setTheme };
     return (
       <ThemeContext.Provider value={propsObj}>

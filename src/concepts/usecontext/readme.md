@@ -1,4 +1,4 @@
-# Explaination:
+# Explanation:
 
 ## Concept for Functional Component
 
